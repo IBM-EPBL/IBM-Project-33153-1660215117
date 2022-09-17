@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Smart Fashion Recommender</title>
+<script>
+function op()
+{
+     var field1=document.getElementById("field1").value;
+     var field2=document.getElementById("field2").value;
+    if(field1=="user" && field2=="user")
+    {
+	window.open("/User");
+    }    
+    
+     else{
+
+         alert("Please Enter Username & Password")
+    }
+}
+function op1()
+{
+     var uname=document.getElementById("uname").value;
+     var pwd=document.getElementById("pwd").value;
+    if(uname=="admin" && pwd=="admin")
+    {
+	window.open("/Admin");
+    }    
+    
+     else{
+
+         alert("Please Enter Username & Password")
+    }
+}
+</script>   
+<style>
+form{
+background-color:yellow; 
+border-style: solid;
+border-color: white;			
+padding: 30px 30px;
+border-radius:15px;
+box-shadow:14px 14px 14px 14px black;
+margin-left:250px
+}
+.login-block {
+float:left;
+margin:0 49px 25px 0;
+}
+h1{
+color:white;
+font-family:algerian;
+}
+h2{
+background-color:blue; 
+width:1357px;
+height:46px;
+color:white;
+}
+a{
+color:white;
+}
+h3{
+margin-left:250px;
+color:white;
+font-size:17pt;
+}
+body{
+background-color:teal;
+} 
+.button {
+  color: white;
+  padding: 5px 5px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: #008CBA;
+}
+.btn {
+  border: none;
+  background-color: inherit;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+}
+.btn:hover {background: #eee;}
+.default {color: black;}
+</style>
+
+</head>
+<body>          
+
+<h1><center>SMART FASHION RECOMMENDER</center></h1>
+<h2><button style="color:white" class="btn default"><a href="/">Home</a></button></h2>
+<div class="login-block">
+  <h3>Admin Login</h3>
+
+<form style="width:250px">
+<label><b>Username : </label><br><input type=text id="uname"><br>
+<br>
+<label>Password :</label> <br><input type=password id="pwd"><br>
+<br>
+<br>
+<button type="submit" class="button" onclick=op1()>LOGIN</button>
+  </form>
+</div>
+<div class="login-block">
+  <h3>User Login</h3> 
+
+<form style="width:250px">
+<label>Username :</label> <br><input type=text id="field1"><br>
+<br>
+<label>Password :</label> <br><input type=password id="field2"><br>
+<br>
+<br>
+<button type="submit" class="button" onclick=op()>LOGIN</button>
+
+
+</form>
+</div>
+</a>
+ 
+  
+  
+</body>
+</html>
